@@ -1,0 +1,22 @@
+body {
+    background-color: #0f2330;
+    color: #fdfcf8;
+    font-family: 'Roboto', Lato, sans-serif;
+}
+
+.app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+aside {
+    width: 250px;
+    background-color: #0f2330;
+    padding: 20px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.file-upload {
+    max-width: 200;
+    padding: 20;
+}
