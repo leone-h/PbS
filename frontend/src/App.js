@@ -1,10 +1,23 @@
-import React from 'react';
+
+import React, { useState } from 'react';
+import FileUpload from './FileUpload';
+import FileContent from './FileContent';
+import './App.css';
+
+
 
 function App() {
+    const [fileContent, setFileContent] = useState('');
+
     return (
-        <div>
-            <h1>Welcome to PbS</h1>
-            <p>This is the main application interface.</p>
+        <div className='app-container'>
+            <aside >
+                <img src="/img/pbs_logo.png" alt="PbS Logo" style={{ height: '80px', marginBottom: '20px' }} />
+                <FileUpload onFileContent={setFileContent} />
+            </aside>
+            <main style={{ flex: 1, padding: '40px 30px' }}>
+                <FileContent content={fileContent} />
+            </main>
         </div>
     );
 }
