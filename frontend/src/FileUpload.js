@@ -16,9 +16,9 @@ function FileUpload({ onFileContent }) {
   };
 
   return (
-    <div className='file-upload'>
-      <h3>Upload File</h3>
-      <input type="file" accept=".txt" onChange={handleFileChange} />
+    <div>
+      <label for='fileInput' class='file-input'>Upload File</label>
+      <input type="file" id='fileInput' accept=".txt" onChange={handleFileChange} />
     </div>
   );
 }

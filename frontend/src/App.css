@@ -10,13 +10,36 @@ body {
 }
 
 aside {
-    width: 250px;
-    background-color: #0f2330;
+    width: 20vw;
     padding: 20px 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.file-upload {
-    max-width: 200;
-    padding: 20;
+main {
+    width: 80vw;
+    padding: 40px 30px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-input {
+    display: inline-block;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #fdfcf8;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.file-content {
+    background: #112532;
+    padding: 10px;
+    min-height: 100px;
+    border-radius: 8px;
+}
+
+.file-content pre {
+    white-space: break-spaces;
 }
