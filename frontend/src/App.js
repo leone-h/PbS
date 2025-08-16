@@ -11,11 +11,11 @@ function App() {
 
     return (
         <div className='app-container'>
-            <aside >
+            <aside>
                 <img src="/img/pbs_logo.png" alt="PbS Logo" style={{ height: '80px', marginBottom: '20px' }} />
                 <FileUpload onFileContent={setFileContent} />
             </aside>
-            <main style={{ flex: 1, padding: '40px 30px' }}>
+            <main>
                 <FileContent content={fileContent} />
             </main>
         </div>
